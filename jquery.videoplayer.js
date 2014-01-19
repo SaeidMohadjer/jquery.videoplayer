@@ -1,3 +1,10 @@
+/**
+* jquery.videoplayer.js v1.0.0 - jQuery plugin to play HTML5 video
+* https://github.com/SaeidMohadjer/jquery.videoplayer
+* Copyright 2014 Saeid Mohadjer
+* Released under the MIT license - http://opensource.org/licenses/MIT
+*/
+
 if (typeof jQuery == 'function') {
 	(function($) {
 		$.fn.videoplayer = function(options) {

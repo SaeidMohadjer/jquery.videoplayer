@@ -1,0 +1,123 @@
+.jquery_videoplayer video {
+	vertical-align: top; /* for when control bar is below video */
+	background: #000; /* will show in fullscreen mode */
+}
+
+.jquery_videoplayer .controller {
+	background: #222;
+	border-top: solid 1px #ddd;
+	color: #fff;
+	padding: 0px 0px;
+	width: auto;
+	font: normal 12px arial, sans-serif;
+	position: absolute;
+	z-index: 10;
+}
+
+.jquery_videoplayer .playpause {
+	width: 15px;
+	float: left;
+	margin: 5px 10px 0 10px;
+	background: url(img/skin_default.png) 0 0 no-repeat;
+    white-space: nowrap; 
+	text-indent: -9999px; 
+	cursor: pointer;
+}
+
+.jquery_videoplayer .playpause.selected {
+	background-position: -40px -40px;
+}
+
+.jquery_videoplayer .duration {
+	color: #bbb;
+}
+
+.jquery_videoplayer .timing {
+	float: right;
+	margin-top: 4px;
+	margin-left: 8px;
+}
+
+.jquery_videoplayer .time, 
+.jquery_videoplayer .duration {
+	letter-spacing: -1px;
+}
+
+.jquery_videoplayer .audio {
+	width: 15px;		
+	background: url(img/skin_default.png) -157px -156px no-repeat;
+    white-space: nowrap; 
+	text-indent: -9999px; 
+	float: right;
+	padding: 5px;
+	cursor: pointer;		
+	margin-left: 5px;
+	cursor: pointer;	
+}
+
+.jquery_videoplayer .audio.selected {
+	background-position: -196px -196px;
+}
+
+.jquery_videoplayer .fullscreen {
+	width: 15px;		
+	background: url(img/skin_default.png) -117px -116px no-repeat;
+    white-space: nowrap; 
+	text-indent: -9999px; 
+	padding: 5px;
+	cursor: pointer;		
+	float: right;
+}
+
+.jquery_videoplayer .fullscreen.selected {
+	background-position: -77px -76px;
+}
+
+.jquery_videoplayer .progressbar_wrapper {
+	background: #999;
+	margin: 7px 10px 0;
+	overflow: hidden;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.jquery_videoplayer .pbar {
+	background: #fff;
+	padding: 5px 0;
+	width: 0;
+	position: absolute;
+	z-index: 100;
+}
+
+.jquery_videoplayer .buffer {
+	background: #ccc;
+	padding: 5px 0;
+	position: absolute;
+	width: 0;	
+	z-index: 10;
+}
+
+.jquery_videoplayer .volume.horizontal {
+	background: url(img/skin_default.png) -250px -250px no-repeat;	
+	margin: 6px 5px 0;
+	width: 28px;
+	height: 12px;
+	float: right;
+}
+
+.jquery_videoplayer  .volume.horizontal .slider_bar {
+	background: url(img/skin_default.png) -300px -300px no-repeat;	
+	width: 0px;
+	height: 24px;
+}
+
+.jquery_videoplayer .volume.horizontal .handle {
+	display: none;
+}
+
+.jquery_videoplayer .video_play_icon {
+	position: absolute;
+	z-index: 100;
+	cursor: pointer;
+	display: none;
+}

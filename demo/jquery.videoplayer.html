@@ -12,7 +12,7 @@
 				$('.jquery_videoplayer video').videoplayer({
 					autoplay: false,
 					'control_autohide': false, 
-					flash_src: 'video/test.mp4', //due to a bug in flowplayer, folder name of video should be dropped for subsequent videos or absolute URL should be used.
+					flash_src: 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4', //due to a bug in flowplayer, folder name of video should be dropped for subsequent videos or absolute URL should be used.
 					callback: function() {
 						console.log('video ended');
 					}				
@@ -24,9 +24,8 @@
 		<h3>jQuery HTML5 Video Player</h3>			
 		<div class="jquery_videoplayer">	
 			<img width="100" height="100" class="video_play_icon" src="../img/play-video-icon.png" />			
-			<video width="400" height="320">
-				<source src="video/test.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-				<source src="video/test.ogv" type='video/ogg; codecs="theora, vorbis"' />
+			<video width="640" height="360">
+				<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
 			</video>
 			<div class="controller">
 				<div class="fullscreen">FullScreen</div>

@@ -1,11 +1,11 @@
 jquery.videoplayer
 ==================
 
-HTML5 Video Player based on jQuery
+A Responsive HTML5 Video Player
 
 <h3>Examples</h3>
 <ul>
-	<li><a href="http://repos.saeidmohadjer.com/jquery.videoplayer/demo/jquery.videoplayer.html">Example 1</a></li>
+	<li><a href="http://smohadjer.github.io/jquery.videoplayer/demo/jquery.videoplayer.html">Demo</a></li>
 </ul>
 
 <h3>API</h3>

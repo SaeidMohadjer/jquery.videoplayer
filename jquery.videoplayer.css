@@ -1,9 +1,11 @@
 .jquery_videoplayer video {
 	vertical-align: top; /* for when control bar is below video */
 	background: #000; /* will show in fullscreen mode */
+	width: 100%;
 }
 
 .jquery_videoplayer .controller {
+	display: none;
 	background: #222;
 	border-top: solid 1px #ddd;
 	color: #fff;
@@ -19,8 +21,8 @@
 	float: left;
 	margin: 5px 10px 0 10px;
 	background: url(img/skin_default.png) 0 0 no-repeat;
-    white-space: nowrap; 
-	text-indent: -9999px; 
+    white-space: nowrap;
+	text-indent: -9999px;
 	cursor: pointer;
 }
 
@@ -38,21 +40,21 @@
 	margin-left: 8px;
 }
 
-.jquery_videoplayer .time, 
+.jquery_videoplayer .time,
 .jquery_videoplayer .duration {
 	letter-spacing: -1px;
 }
 
 .jquery_videoplayer .audio {
-	width: 15px;		
+	width: 15px;
 	background: url(img/skin_default.png) -157px -156px no-repeat;
-    white-space: nowrap; 
-	text-indent: -9999px; 
+    white-space: nowrap;
+	text-indent: -9999px;
 	float: right;
 	padding: 5px;
-	cursor: pointer;		
+	cursor: pointer;
 	margin-left: 5px;
-	cursor: pointer;	
+	cursor: pointer;
 }
 
 .jquery_videoplayer .audio.selected {
@@ -60,12 +62,12 @@
 }
 
 .jquery_videoplayer .fullscreen {
-	width: 15px;		
+	width: 15px;
 	background: url(img/skin_default.png) -117px -116px no-repeat;
-    white-space: nowrap; 
-	text-indent: -9999px; 
+    white-space: nowrap;
+	text-indent: -9999px;
 	padding: 5px;
-	cursor: pointer;		
+	cursor: pointer;
 	float: right;
 }
 
@@ -93,12 +95,12 @@
 	background: #ccc;
 	padding: 5px 0;
 	position: absolute;
-	width: 0;	
+	width: 0;
 	z-index: 10;
 }
 
 .jquery_videoplayer .volume.horizontal {
-	background: url(img/skin_default.png) -250px -250px no-repeat;	
+	background: url(img/skin_default.png) -250px -250px no-repeat;
 	margin: 6px 5px 0;
 	width: 28px;
 	height: 12px;
@@ -106,7 +108,7 @@
 }
 
 .jquery_videoplayer  .volume.horizontal .slider_bar {
-	background: url(img/skin_default.png) -300px -300px no-repeat;	
+	background: url(img/skin_default.png) -300px -300px no-repeat;
 	width: 0px;
 	height: 24px;
 }

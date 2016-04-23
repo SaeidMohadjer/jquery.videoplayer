@@ -3,46 +3,52 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>		
-		<title>jquery.videoplayer</title>		
-		<link href="../jquery.videoplayer.css" rel="stylesheet" />		
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<title>jquery.videoplayer</title>
+		<link href="../jquery.videoplayer.css" rel="stylesheet" />
 		<script src="../jquery.videoplayer.js"></script>
 		<script>
 			$(function() {
-				$('.jquery_videoplayer video').videoplayer({
-					autoplay: false,
-					'control_autohide': false, 
-					flash_src: 'http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4', //due to a bug in flowplayer, folder name of video should be dropped for subsequent videos or absolute URL should be used.
-					callback: function() {
-						console.log('video ended');
-					}				
-				});					
-			});						
+				$('.jquery_videoplayer video').videoplayer();
+			});
 		</script>
+		<style>
+			.demo {
+				width: 100%;
+			}
+
+			@media screen and (min-width: 768px) {
+			 	.demo {
+					width: 50%;
+				}
+			}
+		</style>
 	</head>
-	<body>	
-		<h3>jQuery HTML5 Video Player</h3>			
-		<div class="jquery_videoplayer">	
-			<img width="100" height="100" class="video_play_icon" src="../img/play-video-icon.png" />			
-			<video width="640" height="360">
-				<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
-			</video>
-			<div class="controller">
-				<div class="fullscreen">FullScreen</div>
-				<div class="volume horizontal slider">
-					<div class="slider_bar"></div>
-					<div class="handle"></div>
-				</div>					
-				<div class="audio">Mute</div>
-				<div class="timing">
-					<span class="time">00:00</span> / <span class="duration">00:00</span>
+	<body>
+		<h3>jQuery HTML5 Video Player</h3>
+		<section class="demo">
+			<div class="jquery_videoplayer">
+				<img width="70" height="70" class="video_play_icon" src="../img/play-video-icon.png" />
+				<video controls>
+					<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+				</video>
+				<div class="controller">
+					<div class="fullscreen">FullScreen</div>
+					<div class="volume horizontal slider">
+						<div class="slider_bar"></div>
+						<div class="handle"></div>
+					</div>
+					<div class="audio">Mute</div>
+					<div class="timing">
+						<span class="time">00:00</span> / <span class="duration">00:00</span>
+					</div>
+					<div class="playpause">Play/Pause</div>
+					<div class="progressbar_wrapper">
+						<div class="pbar"></div>
+						<div class="buffer"></div>
+					</div>
 				</div>
-				<div class="playpause">Play/Pause</div>
-				<div class="progressbar_wrapper">
-					<div class="pbar"></div>
-					<div class="buffer"></div>
-				</div>						
-			</div>	
-		</div>
+			</div>
+		</section>
 	</body>
 </html>
